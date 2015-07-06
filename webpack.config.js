@@ -15,6 +15,16 @@ module.exports = {
         loaders: [{
             test: /\.jsx?$/,
             exclude: /(node_modules|bower_components)/,
+            loader: 'transform/cacheable?brfs',
+            cacheable: true
+        }, {
+            test: /\.jsx?$/,
+            exclude: /(node_modules|bower_components)/,
+            loader: 'transform/cacheable?envify',
+            cacheable: true
+        }, {
+            test: /\.jsx?$/,
+            exclude: /(node_modules|bower_components)/,
             cacheable: true,
             loader: 'babel-loader',
             query: {
@@ -23,16 +33,6 @@ module.exports = {
                 retainLines: true,
                 cacheDirectory: true
             }
-        }, {
-            test: /\.jsx?$/,
-            exclude: /(node_modules|bower_components)/,
-            loader: 'transform/cacheable?brfs',
-            cacheable: true
-        }, {
-            test: /\.jsx?$/,
-            exclude: /(node_modules|bower_components)/,
-            loader: 'transform/cacheable?envify',
-            cacheable: true
         }]
     }
 };
