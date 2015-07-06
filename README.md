@@ -40,7 +40,7 @@ module.exports = function($scope) {
 
 ```
 
-SO FAR, ALL IS GOOD
+SO FAR, SO GOOD....
 
 To create the issue, go in `webpack.config.js` and put the `babel-loader` in second or third position
 
