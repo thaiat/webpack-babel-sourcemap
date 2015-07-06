@@ -1,0 +1,29 @@
+{
+  "name": "babel-sourcemaps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "node_modules/watchify/bin/cmd.js src/main.js -d -o  src/bundle.js",
+    "webpack": "node_modules/webpack/bin/webpack.js -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "babel": "^5.6.14",
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.3.1",
+    "babel-runtime": "^5.6.15",
+    "browserify": "^10.2.4",
+    "envify": "^3.4.0",
+    "node-libs-browser": "^0.5.2",
+    "transform-loader": "^0.2.2",
+    "watchify": "^3.2.3",
+    "webpack": "^1.10.1"
+  },
+  "devDependencies": {
+    "brfs": "^1.4.0",
+    "eslint-plugin-nodeca": "^1.0.3"
+  }
+}
