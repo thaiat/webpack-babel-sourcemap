@@ -13,11 +13,11 @@ npm init
 npm run webback
 ```
 
-you can now open `src/index.html` and if all works you should see a "Hello World" message.
+you can now open `src/index.html` in your browser and if all worked you should see a "Hello World" message.
 
-Now open the sources in chrome, and navigate to src/controller/home.js
+Now open the debugger in chrome, and look for `src/controller/home.js`
 
-you should see the following code:
+You should see the following code:
 
 ```js
 'use strict';
@@ -40,9 +40,9 @@ module.exports = function($scope) {
 
 ```
 
-ALL IS GOOD
+SO FAR, ALL IS GOOD
 
-To create the issue, go in `webpack.config.js` and put the babel loader in second or third position
+To create the issue, go in `webpack.config.js` and put the `babel-loader` in second or third position
 
 initial situation:
 ```js
@@ -122,4 +122,4 @@ module.exports = function ($scope) {var
 
 ```
 
-which very different from the original source file...
+which is very different from the original source file...
