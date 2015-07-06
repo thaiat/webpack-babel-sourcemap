@@ -1,8 +1,9 @@
 # webpack-babel-sourcemap
 
 ## Description
-This sample demonstrate an issue with babel-loader messing up the source maps when used on a es6 file with webpack
-It consist in a very simple angular app with one controller displaying a welcome message, and using some es6 syntax.
+This sample demonstrate an issue with babel-loader messing up the source maps when used on a es6 file with webpack.
+
+It consists in a very simple angular app with one controller displaying a welcome message, and using some es6 syntax.
 
 ## How to reproduce
 
